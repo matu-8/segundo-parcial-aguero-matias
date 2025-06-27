@@ -4,4 +4,9 @@ dotenv.config();
 
 const app = express();
 const PORT = 3000;
-app.listen(PORT, () => console.log("Servidor inicializado"))
+// middlewares
+app.use('/')
+// Servidor en linea
+app.listen(PORT, () => { 
+    console.log("Servidor inicializado en http://localhost:3000")
+});
