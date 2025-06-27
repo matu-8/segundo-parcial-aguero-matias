@@ -11,11 +11,19 @@ export const getAllBooks = async (res, res) => {
 };
 export const getBookById = async (req, res) => {
     try {
-        const books = await getBookById.findByPk({message:"Libro encontrado"});
-            // {id} = {req.params.id}
+        const books = await books.findByPk({message:"Libro encontrado"});
+        {where = req.params.id}
+        if(id !== req.params.id) {
+            res.status(400).json({message:'Libro no encontrado'});
+        }
     } catch (error) { res.status(500).json({err: error, message});  
         }    
     };
 export const updBook = async (req, body) => {
+    try { 
+        const book = await book
+    } catch (error) { 
+        
+    }
 
 }
